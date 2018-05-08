@@ -11,7 +11,7 @@ if __name__ == "__main__":
     print("[--Today's Quiz!--]")
     xmin, ymin = Q0401.getMax(2, 3, -1)
     print(xmin, ymin)
-    nx, ny = Q0402.getNormalVec(0,0)
+    nx, ny = Q0402.getNormalVec(0,1)
     print(nx, ny, "\n")
     
     print("[--MyModule0401--]")
