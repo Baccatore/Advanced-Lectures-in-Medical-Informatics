@@ -6,5 +6,9 @@
 # Mini quiz 2 
 #************************************************************
 
+import math
+
 def getNormalVec(x, y):
-    return (-y, x)
+    norm = x**2 + y**2
+    norm = math.sqrt(norm)
+    return (-y/norm, x/norm)
