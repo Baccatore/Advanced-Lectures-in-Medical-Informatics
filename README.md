@@ -28,3 +28,6 @@ for i in range(100):
         hoge += 'Buzz'
 print(hoge)
 ```
+```math
+y = \int^b_a f(x, y) dt
+```
