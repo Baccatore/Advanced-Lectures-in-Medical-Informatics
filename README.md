@@ -17,7 +17,7 @@ Pythonによる科学計算の授業で全15回。
 8. quick_sort
 9. heap_sort
 
-'''
+```code
 hoge = "let's start!"
 for i in range(100):
     print(hoge)
@@ -27,4 +27,4 @@ for i in range(100):
     if i % 3 == 0:
         hoge += 'Buzz'
 print(hoge)
-'''
+```
