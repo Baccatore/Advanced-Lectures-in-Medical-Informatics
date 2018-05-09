@@ -16,3 +16,15 @@ Pythonによる科学計算の授業で全15回。
 7. merge_sort
 8. quick_sort
 9. heap_sort
+
+'''code
+hoge = "let's start!"
+for i in range(100):
+    print(hoge)
+    hoge = '{0:>3d}: '.format(i)
+    if i % 2 == 0:
+        hoge += 'Fizz'
+    if i % 3 == 0:
+        hoge += 'Buzz'
+print(hoge)
+'''
