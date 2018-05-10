@@ -24,7 +24,17 @@ data_x = np.arange(x_min, x_max, 1/float(SCALE)).reshape(-1,1)
 data_ty = data_x**2
 data_vy = data_ty + np.random.randn(len(data_ty), 1) * 0.5
 
-### 飛ばす
+# 学習データ/テストデータの分割処理
+def split_train_test(array):
+    length = len(array)
+    n_train = int(length*(1-TEST_RATE))
+
+    indices = list(range(length))
+    np.random.shuffle(indices)
+    idx_train = indices[:n_train]
+    idy_train = indices[n_train:]
+
+    return sorted(array[idx_train]), sorted(array[idx_test])
 
 plt.scatter(data_x, data_vy, label='tartget')
 plt.show()
