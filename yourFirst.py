@@ -64,5 +64,5 @@ plt.scatter(x_test[label_test !=  True], y_test[label_test != True],
 
 # 江口くんのところ
 
-plt.legen(bbox_to_anchor=(1.05,1),, loc='upper left', borderaxespad=0)
+plt.legend(bbox_to_anchor=(1.05,1),, loc='upper left', borderaxespad=0)
 plt.show()
