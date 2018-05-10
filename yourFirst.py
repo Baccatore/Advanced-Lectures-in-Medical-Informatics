@@ -36,6 +36,15 @@ def split_train_test(array):
 
     return sorted(array[idx_train]), sorted(array[idx_test])
 
+indices = np.arange(len(data_x))
+idx_train, idx_test = split_train_test(indices)
+
+x_train = data_x[idx_train]
+y_train = data_y[idx_train]
+
+x_test = data_x[idx_train]
+y_test = data_y[idx_train]
+
 plt.scatter(data_x, data_vy, label='tartget')
 plt.show()
 
