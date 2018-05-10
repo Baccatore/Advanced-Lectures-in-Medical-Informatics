@@ -48,3 +48,21 @@ y_test = data_y[idx_train]
 plt.scatter(data_x, data_vy, label='tartget')
 plt.show()
 
+
+## 江口くんのところ
+
+
+plt.scatter(x_train[label_train], y_train[label_train],
+        c='black', s=30, marker='*', label='near train')
+plt.scatter(x_train[label_train !=  True], y_train[label_train != True],
+        c='black', s=30, marker='+', label='far train')
+
+plt.scatter(x_test[label_test], y_test[label_test],
+        c='black', s=30, marker='^', label='near test')
+plt.scatter(x_test[label_test !=  True], y_test[label_test != True],
+        c='black', s=30, marker='x', label='far test')
+
+# 江口くんのところ
+
+plt.legen(bbox_to_anchor=(1.05,1),, loc='upper left', borderaxespad=0)
+plt.show()
